@@ -1,0 +1,107 @@
+.blog-padding{
+  padding: 40px 0 160px 0;
+  @include md {
+    padding: 32px 0 96px 0;
+  }
+  @include sm {
+    padding: 28px 0px 56px 0px;
+  }
+}
+.blog-margin-bottom{
+  margin-bottom: 60px;
+  @include md {
+    margin-bottom: 24px;
+  }
+  @include sm{
+    margin-bottom: 20px;
+  }
+}
+.blog-menu {
+  @include sm {
+    display: none;
+  }
+  .blog-menu-text{
+    padding: 12px 48px 12px 0;
+    &:hover {
+      color: $gray;
+    }
+    @include md {
+      padding: 16px 32px 16px 0;
+    }
+    
+  }
+}
+.blog-img{
+  width: 100%;
+  @include md {
+    height: 208px;
+  }
+  @include sm {
+    height: 217px;
+  }
+}
+.blog-card{
+  .blog-card-title{
+    font-size: $h3-font-size;
+    @include md {
+      font-size: $h5-font-size;
+    }
+    @include sm {
+      font-size: $h6-font-size;
+    }
+  }
+  .blog-card-subtitle{
+    font-size: $h5-font-size;
+    margin-bottom: 24px;
+    @include md {
+      font-size: $h6-font-size;
+    }
+    @include sm {
+      font-size: $font-size-base*0.875; // 14
+    }
+    .blog-card-time{
+      font-size: $h6-font-size;
+      @include md {
+        font-size: $font-size-base*0.875; // 14
+      }
+    }
+
+  }
+  .blog-card-content{
+    height: 100%;
+    font-size: $h5-font-size;
+    color: $gray;
+    margin-bottom: 14px;
+    @include sm {
+      display: none;
+    }
+    .blog-card-lg-link{
+      @include lg {
+        font-size: $font-size-base*0.875; // 14
+        &::after {
+          color: #555;
+      font-weight: 700;
+      font-size: $font-size-base*0.875;
+      text-transform: lowercase;
+      background-color: #fff;
+      content: "more";
+  
+        }
+      }
+    }
+  }
+  .blog-card-link{
+    font-size: $font-size-base*2.25; // 36
+    &:hover {
+      color: $warning;
+    }
+    @include lg {
+      display: none;
+    }
+  }
+}
+
+.blog-card-link-margin{
+  margin-top:60px ;
+}
+

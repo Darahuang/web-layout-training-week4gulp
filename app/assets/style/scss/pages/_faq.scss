@@ -1,0 +1,36 @@
+.faq-subtitle{
+  font-size: $h3-font-size;
+  font-weight: 700;
+  margin-bottom: 36px;
+  @include md {
+    margin-bottom: 32px;
+  }
+  @include sm {
+   font-size: $h5-font-size;
+   font-weight: normal;
+   margin-bottom: 24px;
+  }
+}
+.faq-question{
+  font-size: $h5-font-size;
+  margin-bottom: $spacer;
+  @include sm {
+    font-size: $h6-font-size;
+    margin-bottom: $spacer*0.5;
+  }
+}
+.faq-answer{
+  font-size: $h6-font-size;
+  @include sm {
+    font-size: $font-size-base*0.875; // 14
+  }
+}
+.faq-list{
+  margin-bottom: 32px;
+  @include md{
+    margin-bottom: 24px;
+  }
+  @include sm {
+    margin-bottom: 20px;
+  }
+}

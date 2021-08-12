@@ -1,0 +1,19 @@
+.page {
+  .pagination{
+    padding: 10px;
+    border: 1px solid $gray;
+    color: #555555;
+    &:hover{
+      background-color: #ddd;
+    }
+  }
+  .active {
+    background-color: $dark;
+    color: #fff;
+    border: 1px solid $dark;
+  }
+  .disabled{
+    background-color: #ddd;
+  }
+}
+
