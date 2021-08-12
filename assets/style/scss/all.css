@@ -895,6 +895,7 @@ a {
       margin: 5px 0;
       background-color: #fff;
       -webkit-transition: width 0.3s;
+      -o-transition: width 0.3s;
       transition: width 0.3s; }
     @media (max-width: 768px) {
       .nav .menu a::after {
@@ -932,9 +933,11 @@ a {
   .footer .footer-icon {
     padding-right: 32px;
     -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
     transition: all 0.3s; }
     .footer .footer-icon:hover {
       -webkit-transform: scale(1.2);
+          -ms-transform: scale(1.2);
               transform: scale(1.2); }
     @media (max-width: 768px) {
       .footer .footer-icon {
@@ -1040,6 +1043,7 @@ a {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1600,9 +1604,14 @@ a {
     .post .post-card-share {
       font-size: 1rem; } }
 
-.post .post-card-link:hover {
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15); }
+.post .post-card-link {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .post .post-card-link:hover {
+    -webkit-transform: scale(1.15);
+        -ms-transform: scale(1.15);
+            transform: scale(1.15); }
 
 @media (max-width: 768px) {
   .post .post-card-img {
@@ -1652,4 +1661,5 @@ a {
 
 .page .disabled {
   background-color: #ddd; }
+
 /*# sourceMappingURL=all.css.map */
